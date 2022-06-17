@@ -25,8 +25,7 @@ export default class Pricing {
   }
 
   displayFullPrice() {
-    const curClass = this.Currency.displayFullCurrency();
-    return `${this._amount} ${curClass}`;
+    return `${this.amount} ${this.currency.displayFullCurrency()}`;
   }
 
   static convertPrice(amount, conversionRate) {
