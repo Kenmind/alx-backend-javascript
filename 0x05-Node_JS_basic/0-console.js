@@ -1,4 +1,4 @@
-const displayMessage = (data) => {
+console.log = displayMessage = (data) => {
   process.stdout.write(`${data}\n`);
 };
 
